@@ -1,6 +1,9 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
+
 
 export const Hero = () => {
   return (
@@ -23,7 +26,16 @@ export const Hero = () => {
         className='text-center text-[40px] md:text-5xl lg:text-6xl'
         words='Transforming Concepts into Seamless Experiences'
         />
-
+        <p className='text-center text-blue-100 md:tracking-wider mb-4 text-sm mb:text-lg lg:text-2xl'>
+          Hi, I&apos;m sathish, a Software Developer based in Colombo of Sri Lanka.
+        </p>
+        <a href="#about">
+          <MagicButton
+            title="Show my work"
+            icon={<FaLocationArrow/>}
+            position='right'
+          />
+        </a>
       </div>
     </div>
       
